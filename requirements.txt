@@ -1,0 +1,37 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# LangChain and LangGraph
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-anthropic==0.0.2
+langgraph==0.0.20
+langchain-community==0.0.10
+
+# Database and storage
+sqlalchemy==2.0.23
+alembic==1.13.1
+
+# HTTP and API
+httpx==0.25.2
+requests==2.31.0
+
+# Utilities
+python-multipart==0.0.6
+jinja2==3.1.2
+aiofiles==23.2.1
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+black==23.11.0
+flake8==6.1.0
+
+# Logging and monitoring
+structlog==23.2.0
+rich==13.7.0

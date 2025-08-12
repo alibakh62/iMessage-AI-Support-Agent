@@ -1,0 +1,100 @@
+# iMessage AI Support Agent Configuration
+
+# Application Settings
+app:
+  name: "iMessage AI Support Agent"
+  version: "0.1.0"
+  environment: "development"
+  debug: false
+
+# Server Configuration
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  timeout: 30
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/app.log"
+  max_size: "10MB"
+  backup_count: 5
+
+# LangChain Configuration
+langchain:
+  tracing_v2: true
+  endpoint: "https://api.smith.langchain.com"
+  project: "imessage-ai-agent"
+  
+# AI Models Configuration
+models:
+  openai:
+    default_model: "gpt-4"
+    temperature: 0.7
+    max_tokens: 1000
+    timeout: 30
+  
+  anthropic:
+    default_model: "claude-3-sonnet-20240229"
+    temperature: 0.7
+    max_tokens: 1000
+    timeout: 45
+
+# Agent Configuration
+agent:
+  support:
+    max_conversation_length: 50
+    context_window: 10
+    escalation_threshold: 0.3
+    response_timeout: 30
+  
+  escalation:
+    priority_levels: ["low", "medium", "high", "urgent"]
+    auto_assign: true
+    notification_channels: ["email", "slack"]
+
+# iMessage Integration
+imessage:
+  webhook_secret: ""
+  server_url: ""
+  max_message_length: 10000
+  supported_types: ["text", "image", "video", "audio"]
+  
+# Database Configuration
+database:
+  url: "sqlite:///conversations.db"
+  pool_size: 5
+  max_overflow: 10
+  echo: false
+
+# Security Configuration
+security:
+  webhook_signature_validation: true
+  rate_limiting:
+    enabled: true
+    max_requests: 100
+    window_seconds: 60
+  cors:
+    allowed_origins: ["*"]
+    allowed_methods: ["GET", "POST", "PUT", "DELETE"]
+    allowed_headers: ["*"]
+
+# Monitoring and Analytics
+monitoring:
+  enabled: true
+  metrics_interval: 60
+  health_check_interval: 30
+  alerting:
+    enabled: false
+    email: ""
+    slack_webhook: ""
+
+# Feature Flags
+features:
+  conversation_analysis: true
+  sentiment_analysis: true
+  auto_escalation: true
+  multi_language: false
+  voice_transcription: false
