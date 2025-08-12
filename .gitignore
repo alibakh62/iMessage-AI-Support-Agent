@@ -63,3 +63,8 @@ htmlcov/
 # Markdown files (except README.md)
 *.md
 !README.md
+
+# Specific markdown files to exclude
+WEEKLY_ACTION_PLAN.md
+PROJECT_PLAN.md
+PROJECT_SUMMARY.md
