@@ -19,28 +19,6 @@ An intelligent AI-powered support agent that integrates with iMessage to provide
 - **FastAPI**: RESTful API for external integrations
 - **SQLite**: Local conversation storage and context management
 
-## 📋 Project Plan
-
-### Phase 1: Core Infrastructure
-- [x] Project structure setup
-- [ ] LangChain integration setup
-- [ ] LangGraph agent framework
-- [ ] Basic conversation management
-
-### Phase 2: iMessage Integration
-- [ ] iMessage API integration
-- [ ] Message parsing and formatting
-- [ ] Response delivery system
-
-### Phase 3: AI Agent Development
-- [ ] Support agent logic
-- [ ] Context management
-- [ ] Response generation
-
-### Phase 4: Advanced Features
-- [ ] Multi-agent conversations
-- [ ] Analytics dashboard
-- [ ] Configuration management
 
 ## 🛠️ Installation
 
@@ -120,7 +98,3 @@ The agent can be used in several ways:
 ## 📄 License
 
 MIT License - see LICENSE file for details
-
-## 🆘 Support
-
-For support and questions, please open an issue on GitHub.
