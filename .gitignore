@@ -68,3 +68,8 @@ htmlcov/
 WEEKLY_ACTION_PLAN.md
 PROJECT_PLAN.md
 PROJECT_SUMMARY.md
+
+# UI testing files
+static/
+serve_ui.py
+UI_README.md
